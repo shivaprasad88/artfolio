@@ -1,6 +1,5 @@
 import React from 'react';
 import CarouselItem from '../components/carousel-item';
-import NavScroll from '../components/nav-scroll';
 
 import prFort from '../../assets/web-6655.jpg';
 import prCemetary from '../../assets/web-6564.jpg';
