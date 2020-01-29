@@ -1,43 +1,16 @@
 
-html {
+body {
     scroll-behavior: smooth;
+    background-color:rgba(238, 238, 238, 0.4);
     }
 
-  
-.scroll-section {
-    position: relative;
-    overflow-y: scroll;
-    min-height: 100vh;
-    height: 100vh;
-}
-
-.image-grid-heading {
- background-color: green;
-}
-
-.image-grid-icons {
- background-color: pink;
-}
-.image-layout{
-padding-top:60px;
-    background-color: rgb(249,249,249);
-}
 .is-active {
     font-weight: 800;
 }
 
 .navbar {
     height: 60px;
-    background-color: rgba(49,47,45,.99) !important;
-}
-
-
-.image-grid {
-    margin-top: 60px;
-    min-height: 200px;
-
-
-
+    background-color: #232530!important;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -62,3 +35,16 @@ width: 7.5%;
     filter: invert(75%);
 }
 
+.thumbnail {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.thumbimage {
+    max-width: 100%;
+}
+
+.image-grid {
+    margin-top: 80px;
+    min-height: 200px;
+}

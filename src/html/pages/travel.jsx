@@ -1,17 +1,31 @@
 import React from 'react';
-import CarouselItem from '../components/carousel-item';
+import { Container, Row, Col, Image } from "react-bootstrap";
+import Thumbnail from '../components/thumbnail';
+import TravelPhotolist from '../components/lists/travel-photolist'
 
-import prFort from '../../assets/web-6655.jpg';
-import prCemetary from '../../assets/web-6564.jpg';
-import goaDog from '../../assets/web-4150.jpg';
-import goaSelfie from '../../assets/web-2997.jpg';
 
 function TravelPage() {
-    return <CarouselItem image={[{ src: prFort, caption: 'First slide label' },
-    { src: goaDog, caption: 'Second slide label' },
-    { src: goaSelfie, caption: 'Third slide label' },
-    { src: prCemetary, caption: 'Fourth slide label' }]} />
-  }
+  return <Container fluid="md" className="image-grid">
+    <Row>
+      <Col xs={12} md={2}><h3>Travel</h3></Col>
+      <Col xs={12} md={10}>
+        <Container fluid="md">
+          <Row>
+            {
+              TravelPhotolist.map((function (value, key) {
+                return <Thumbnail image={value} id={key} key={key} />
+              }))
+
+            }
+
+          </Row>
+        </Container>
+      </Col></Row>
+  </Container>
+
+
+
+}
 
 
 export default TravelPage;

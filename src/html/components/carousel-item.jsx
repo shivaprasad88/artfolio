@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
+import ExifData from '../components/exif-data';
 
 
 function CarouselItem(props) {
+    const [index, setIndex] = useState(props.active);
+    const [direction, setDirection] = useState(null);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+        setDirection(e.direction);
+    };
+
     return (
-        <Carousel>
+        <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={null}>
             {props.image.map(function (image, key) {
                 return <Carousel.Item key={key} className="image-layout">
                     <Container >
@@ -20,9 +29,10 @@ function CarouselItem(props) {
                             </Col>
                             <Col />
                         </Row></Container>
-                        <Carousel.Caption>
+                    <Carousel.Caption>
                         <h4>{image.caption}</h4>
                         <p>{key + 1}/{props.image.length}</p>
+                        <ExifData image={image} />
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -30,7 +40,7 @@ function CarouselItem(props) {
             })}
 
 
-        </Carousel>
+        </ Carousel>
     )
 };
 

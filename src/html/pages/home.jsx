@@ -1,9 +1,18 @@
 import React from 'react';
 import TravelPage from '../pages/travel'
+import { Jumbotron, Container } from 'react-bootstrap';
 
 
 function Home() {
-    return <TravelPage/>
+    return <Jumbotron fluid>
+    <Container>
+      <h1>Fluid jumbotron</h1>
+      <p>
+        This is a modified jumbotron that occupies the entire horizontal space of
+        its parent.
+      </p>
+    </Container>
+  </Jumbotron>
   }
 
 
