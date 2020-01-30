@@ -15,9 +15,6 @@ function CarouselItem(props) {
         <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={null} >
             {props.image.map(function (image, key) {
                 return <Carousel.Item key={key} className="image-layout">
-                    <Carousel.Caption>
-
-                    </Carousel.Caption>
                     <Container >
                         <Row className="justify-content-md-center">
                             <Col />
@@ -35,7 +32,6 @@ function CarouselItem(props) {
                         <Container>
                             <Row>
                                 <Col><p className="image-caption">{image.caption}</p></Col>
-                                <Col xs={6}></Col>
                                 <Col><p className="image-number">{key + 1 + " of " + props.image.length}</p></Col>
                             </Row>
                         </Container>
