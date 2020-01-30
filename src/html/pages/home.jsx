@@ -1,10 +1,9 @@
 import React from 'react';
-import TravelPage from '../pages/travel'
 import { Jumbotron, Container } from 'react-bootstrap';
 
 
 function Home() {
-    return <Jumbotron fluid>
+  return <Jumbotron fluid>
     <Container>
       <h1>Fluid jumbotron</h1>
       <p>
@@ -13,7 +12,7 @@ function Home() {
       </p>
     </Container>
   </Jumbotron>
-  }
+}
 
 
 export default Home;

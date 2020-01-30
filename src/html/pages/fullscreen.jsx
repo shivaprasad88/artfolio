@@ -6,8 +6,7 @@ import {
     useParams
 } from "react-router-dom";
 import CarouselItem from '../components/carousel-item';
-import TravelPhotolist from "../components/lists/travel-photolist"
-import TravelPage from "./travel";
+import TravelPhotolist from "../components/lists/travel-photolist";
 
 function Fullscreen() {
     let match = useRouteMatch();
