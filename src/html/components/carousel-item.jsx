@@ -4,7 +4,7 @@ import ExifData from '../components/exif-data';
 
 
 function CarouselItem(props) {
-    const [index, setIndex] = useState(props.active);
+    const [index, setIndex] = useState(props.active | 0);
     const [direction, setDirection] = useState(null);
 
     const handleSelect = (selectedIndex, e) => {
