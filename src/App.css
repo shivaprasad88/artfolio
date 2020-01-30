@@ -44,11 +44,16 @@ width: 7.5%;
 }
 
 .image-caption {
-    font-size: 11.5pt;
+    font-size: 12pt;
     text-align: left;
 }
 
 .image-number {
     font-size: 9pt;
     text-align: right;
+}
+
+.thumbimage:hover {
+opacity: 97%;
+    outline: 5px solid rgba(202, 162, 50, 0.568);
 }

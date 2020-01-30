@@ -20,10 +20,10 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path={"/" + navscroll[0]} component={TravelPage} />
         <Route path={"/" + navscroll[1]} component={LandscapePage} />
+        <Route path={"/" + navscroll[2]} component={PortraitPage} />
         <Route path="/carousel">
           <Carousel />
         </Route>
-        <Route path={"/" + navscroll[2]} component={PortraitPage} />
       </Router>
     </div>
   );
