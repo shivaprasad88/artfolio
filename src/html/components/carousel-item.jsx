@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
-import ExifData from '../components/exif-data';
 
 
 function CarouselItem(props) {
@@ -13,9 +12,12 @@ function CarouselItem(props) {
     };
 
     return (
-        <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={null}>
+        <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} interval={null} >
             {props.image.map(function (image, key) {
                 return <Carousel.Item key={key} className="image-layout">
+                    <Carousel.Caption>
+
+                    </Carousel.Caption>
                     <Container >
                         <Row className="justify-content-md-center">
                             <Col />
@@ -30,9 +32,14 @@ function CarouselItem(props) {
                             <Col />
                         </Row></Container>
                     <Carousel.Caption>
-                        <h4>{image.caption}</h4>
-                        <p>{key + 1}/{props.image.length}</p>
-                        <ExifData image={image} />
+                        <Container>
+                            <Row>
+                                <Col><p className="image-caption">{image.caption}</p></Col>
+                                <Col xs={6}></Col>
+                                <Col><p className="image-number">{key + 1 + " of " + props.image.length}</p></Col>
+                            </Row>
+                        </Container>
+
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -40,7 +47,7 @@ function CarouselItem(props) {
             })}
 
 
-        </ Carousel>
+        </ Carousel >
     )
 };
 

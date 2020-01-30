@@ -2,15 +2,12 @@
 body {
     scroll-behavior: smooth;
     background-color:rgba(238, 238, 238, 0.4);
+    font-family: 'Nunito Sans', sans-serif;
     }
-
-.is-active {
-    font-weight: 800;
-}
 
 .navbar {
     height: 60px;
-    background-color: #232530!important;
+    font-size:14pt;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -19,19 +16,15 @@ width: 7.5%;
 
 
 }
-.carousel {
-    margin-top: 60px; 
-} 
 
 .carousel-indicators {
-    filter: invert(60%);
+    filter: invert(50%);
 }
 
 
 .carousel-caption {
     position: static !important;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     filter: invert(75%);
 }
 
@@ -45,6 +38,13 @@ width: 7.5%;
 }
 
 .image-grid {
-    margin-top: 80px;
     min-height: 200px;
+}
+
+.image-caption {
+    font-size: 11.5pt;
+}
+
+.image-number {
+    font-size: 9pt;
 }

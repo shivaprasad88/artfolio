@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Thumbnail(props) {
     return (
         <Col className="thumbnail" xs={6} md={4} lg={3}>
-            <LinkContainer to={"/fullscreen/" + props.id}><Link to={"/fullscreen/" + props.id}><Image className="thumbimage" src={props.image.src} rounded /></Link></LinkContainer>
+            <LinkContainer to={"/carousel/" + props.id}><Link to={"/carousel/" + props.id}><Image className="thumbimage" src={props.image.src} /></Link></LinkContainer>
         </Col>
     )
 };

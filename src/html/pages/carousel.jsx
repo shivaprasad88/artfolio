@@ -8,7 +8,7 @@ import {
 import CarouselItem from '../components/carousel-item';
 import TravelPhotolist from "../components/lists/travel-photolist";
 
-function Fullscreen() {
+function Carousel() {
     let match = useRouteMatch();
 
     return (
@@ -34,4 +34,4 @@ function Topic() {
     );
 }
 
-export default Fullscreen;
+export default Carousel;

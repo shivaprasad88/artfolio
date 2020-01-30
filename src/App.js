@@ -7,7 +7,7 @@ import Home from './html/pages/home';
 import TravelPage from './html/pages/travel';
 import LandscapePage from './html/pages/landscape';
 import PortraitPage from './html/pages/portrait';
-import Fullscreen from './html/pages/fullscreen';
+import Carousel from './html/pages/carousel';
 
 
 function App() {
@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App" >
       <Router>
-        <Navigation bg="dark" navscroll={navscroll} />
+        <Navigation navscroll={navscroll} />
         <Route exact path="/" component={Home} />
         <Route path={"/" + navscroll[0]} component={TravelPage} />
         <Route path={"/" + navscroll[1]} component={LandscapePage} />
-        <Route path="/fullscreen">
-          <Fullscreen />
+        <Route path="/carousel">
+          <Carousel />
         </Route>
         <Route path={"/" + navscroll[2]} component={PortraitPage} />
       </Router>
