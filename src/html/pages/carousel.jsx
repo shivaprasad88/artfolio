@@ -37,7 +37,7 @@ function Carousel() {
 function Topic(params) {
     let { photoId } = useParams();
     return (
-        <div className="image-grid" >
+        <div className="carousel-grid" >
             <CarouselItem image={params.list} active={photoId} />
         </div >
     );

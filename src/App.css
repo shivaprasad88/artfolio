@@ -40,7 +40,13 @@ width: 7.5%;
 
 .image-grid {
     min-height: 200px;
-    margin-top: 60px;
+    padding-top: 60px;
+}
+
+.carousel-grid{
+    min-height: 200px;
+    padding-top: 60px;
+    background-color: #fdfdfd;
 }
 
 .image-caption {
