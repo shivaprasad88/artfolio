@@ -1,12 +1,21 @@
 import React from 'react';
-import CarouselItem from '../components/carousel-item';
+import { Container, Row } from "react-bootstrap";
+import Thumbnail from '../components/thumbnail';
+import PortraitPhotolist from '../components/lists/portrait-photolist'
 
-import prFort from '../../assets/web-6655.jpg';
-import goaSelfie from '../../assets/web-2997.jpg';
 
 function PortraitPage() {
-  return <CarouselItem image={[{ src: prFort, caption: 'First slide label' },
-  { src: goaSelfie, caption: 'Third slide label' }]} />
+  return <Container fluid="md" className="image-grid">
+    <Row>
+      {
+        PortraitPhotolist.map((function (value, key) {
+          return <Thumbnail image={value} id={key} key={key} tag="portrait" />
+        }))
+
+      }
+
+    </Row>
+  </Container>
 }
 
 

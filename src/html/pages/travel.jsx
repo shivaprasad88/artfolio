@@ -9,7 +9,7 @@ function TravelPage() {
     <Row>
       {
         TravelPhotolist.map((function (value, key) {
-          return <Thumbnail image={value} id={key} key={key} />
+          return <Thumbnail image={value} id={key} key={key} tag="travel" />
         }))
 
       }

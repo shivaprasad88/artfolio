@@ -21,11 +21,9 @@ function App() {
         <Route path={"/" + navscroll[0]} component={TravelPage} />
         <Route path={"/" + navscroll[1]} component={LandscapePage} />
         <Route path={"/" + navscroll[2]} component={PortraitPage} />
-        <Route path="/carousel">
-          <Carousel />
-        </Route>
+        <Route path="/carousel" component={Carousel} />
       </Router>
-    </div>
+    </div >
   );
 }
 
