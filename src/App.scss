@@ -1,0 +1,90 @@
+body {
+	scroll-behavior: smooth;
+	background-color: rgba(238, 238, 238, 0.4);
+	font-family: 'Nunito Sans', sans-serif;
+}
+.navbar {
+	height: 60px;
+	font-size: 14pt;
+}
+.carousel-control-next {
+	width: 7.5%;
+	filter: invert(75%);
+}
+.carousel-control-prev {
+	width: 7.5%;
+	filter: invert(75%);
+}
+.carousel-indicators {
+	filter: invert(50%);
+}
+.carousel-caption {
+	position: static !important;
+	margin-bottom: 30px;
+	filter: invert(75%);
+	padding-top: 15px;
+}
+.thumbnail {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.footer-thumbnail {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-right:(0px !important);
+	margin-left:(0px !important);
+	max-width: 10%;
+}
+
+.modal-footer {
+
+	padding:(0px !important);
+	justify-content: flex-start ;
+}
+
+.thumbimage {
+    max-width: 100%;
+    transition: 0.3s;
+	&:hover {
+/* 		opacity: 95%;
+        outline: 5px solid rgba(202, 162, 50, 0.568); */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+.image-grid {
+	min-height: 200px;
+	padding-top: 60px;
+}
+.carousel-grid {
+	min-height: 200px;
+	padding-top: 60px;
+	background-color: #fdfdfd;
+}
+.image-caption {
+	font-size: 14pt;
+	float: left;
+	font-variant: bold;
+}
+.image-number {
+	font-size: 9pt;
+	float: right;
+}
+
+.modal-header {
+	border-bottom : 0px;
+}
+
+.modal-dialog {
+margin-top: 0;
+margin-bottom: 0;
+    position: absolute;
+    top:1%;
+    left:1%;
+    right: 1%;
+    bottom:1%;
+    height:100%;
+  max-width: 98%;
+  max-height: 98%;
+  
+}

@@ -10,7 +10,7 @@ import boatcrashDesert from '../../../assets/deathvalleyboatcrash.JPG';
 import kodaiMirrorlake from '../../../assets/kodaikanalmirror.JPG';
 import mistTrees from '../../../assets/yosemite-mist-tress.JPG';
 
-const TravelPhotolist = [{ "src": aForAlaska, "caption": "A For Alaska" },
+const LandscapePhotolist = [{ "src": aForAlaska, "caption": "A For Alaska" },
 { "src": alaskaGlacier, "caption": "Galcier Town" },
 { "src": caliLighthouse, "caption": "California Lighthouse" },
 { "src": coloradoLonetree, "caption": "Colorado Lone Tree" },
@@ -23,4 +23,4 @@ const TravelPhotolist = [{ "src": aForAlaska, "caption": "A For Alaska" },
 { "src": tahoeReflection, "caption": "Tahoe Mirror" },
 { "src": zabriskeHiker, "caption": "Zabriske Lone Hiker" }]
 
-export default TravelPhotolist
+export default LandscapePhotolist

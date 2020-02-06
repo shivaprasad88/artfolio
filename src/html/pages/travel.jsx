@@ -1,21 +1,9 @@
 import React from 'react';
-import { Container, Row } from "react-bootstrap";
-import Thumbnail from '../components/thumbnail';
-import TravelPhotolist from '../components/lists/travel-photolist'
-
+import TravelPhotolist from '../components/lists/travel-photolist';
+import Lightbox from '../components/lightbox';
 
 function TravelPage() {
-  return <Container fluid="md" className="image-grid">
-    <Row>
-      {
-        TravelPhotolist.map((function (value, key) {
-          return <Thumbnail image={value} id={key} key={key} tag="travel" />
-        }))
-
-      }
-
-    </Row>
-  </Container>
+  return <Lightbox photolist={TravelPhotolist}></Lightbox>
 }
 
 

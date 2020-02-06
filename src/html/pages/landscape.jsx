@@ -1,21 +1,10 @@
 import React from 'react';
-import { Container, Row } from "react-bootstrap";
-import Thumbnail from '../components/thumbnail';
+import Lightbox from '../components/lightbox';
 import LandscapePhotolist from '../components/lists/landscape-photolist'
 
 
 function LandscapePage() {
-  return <Container fluid="md" className="image-grid">
-    <Row>
-      {
-        LandscapePhotolist.map((function (value, key) {
-          return <Thumbnail image={value} id={key} key={key} tag="landscape" />
-        }))
-
-      }
-
-    </Row>
-  </Container>
+  return <Lightbox photolist={LandscapePhotolist}></Lightbox>
 }
 
 

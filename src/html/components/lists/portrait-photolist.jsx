@@ -8,15 +8,14 @@ import goaBeachGirl from '../../../assets/goagirlbeach.JPG';
 import colombiaCouple from '../../../assets/web-5362.jpg'
 import dogsWorld from '../../../assets/web-4150.jpg'
 
-const TravelPhotolist = [
-    { "src": portlandFoliage, "caption": "Portland Fall Foliage" },
-    { "src": delhiTrafficFamily, "caption": "Family in Traffic" },
-    { "src": manHeadDown, "caption": "Beat up Blues" },
-    { "src": colombiaCouple, "caption": "Silence of the Muesum" },
-    { "src": goaBeachGirl, "caption": "Goa Beach Girl" },
-    { "src": dogsWorld, "caption": "A Dog's World" },
-    { "src": elliotSunset, "caption": "Walk Away" },
-    { "src": maduraiTemplekids, "caption": "Kids of Madurai" },
-    { "src": musicianNophoto, "caption": "Musician No Photo" }]
+const PortraitPhotolist = [{ "src": portlandFoliage, "caption": "Portland Fall Foliage" },
+{ "src": delhiTrafficFamily, "caption": "Family in Traffic" },
+{ "src": manHeadDown, "caption": "Beat up Blues" },
+{ "src": colombiaCouple, "caption": "Silence of the Muesum" },
+{ "src": goaBeachGirl, "caption": "Goa Beach Girl" },
+{ "src": dogsWorld, "caption": "A Dog's World" },
+{ "src": elliotSunset, "caption": "Walk Away" },
+{ "src": maduraiTemplekids, "caption": "Kids of Madurai" },
+{ "src": musicianNophoto, "caption": "Musician No Photo" }]
 
-export default TravelPhotolist
+export default PortraitPhotolist
