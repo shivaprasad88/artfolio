@@ -2,7 +2,6 @@
   "name": "artfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "shiva-portfolio.appspot.com",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",

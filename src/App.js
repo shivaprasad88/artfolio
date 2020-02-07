@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import './assets/lightbox.scss'
 import Navigation from './html/components/navigation';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import Home from './html/pages/home';
 import TravelPage from './html/pages/travel';

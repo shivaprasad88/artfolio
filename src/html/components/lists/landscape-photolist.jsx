@@ -11,7 +11,7 @@ import kodaiMirrorlake from '../../../assets/kodaikanalmirror.JPG';
 import mistTrees from '../../../assets/yosemite-mist-tress.JPG';
 
 const LandscapePhotolist = [{ "src": aForAlaska, "caption": "A For Alaska" },
-{ "src": alaskaGlacier, "caption": "Galcier Town" },
+{ "src": alaskaGlacier, "caption": "Glacier Town" },
 { "src": caliLighthouse, "caption": "California Lighthouse" },
 { "src": coloradoLonetree, "caption": "Colorado Lone Tree" },
 { "src": elCapitan, "caption": "El Capitan" },
