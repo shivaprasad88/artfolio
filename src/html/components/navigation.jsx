@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 function Navigation(props) {
   return (
-    <Navbar id="navbar"  >
+    <Navbar collapseOnSelect id="navbar" expand="lg" >
       <LinkContainer to={"/"}>
         <Navbar.Brand >Shiva Prasad</Navbar.Brand>
       </LinkContainer>

@@ -3,10 +3,7 @@ body {
 	background-color: rgba(238, 238, 238, 0.4);
 	font-family: 'Nunito Sans', sans-serif;
 }
-.navbar {
-	height: 60px;
-	font-size: 14pt;
-}
+
 
 .thumbnail {
 	padding-top: 15px;
@@ -22,8 +19,9 @@ body {
 }
 
 .modal-footer {
-
 	padding:(0px !important);
+	display: flex;
+
 	justify-content: flex-start ;
 }
 
@@ -37,8 +35,9 @@ body {
 	}
 }
 .image-grid {
-	min-height: 200px;
-	padding-top: 60px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .image-caption {
@@ -68,3 +67,15 @@ margin-bottom: 0;
   max-height: 98%;
   
 }
+
+.modal-content {
+	height: 100%;
+}
+
+.blowup {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+

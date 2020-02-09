@@ -57,8 +57,8 @@ function Lightbox(props) {
                 <Container >
                     <Row className="justify-content-md-center">
                         <Col xs='auto'>
-                            <span className="image-caption">{caption}</span><span className="image-number">{index + 1} / {props.photolist.length}</span>
-                            <Image className="d-block mw-100" src={source} />
+                            <div className="blowup"><span className="image-caption">{caption}</span><span className="image-number">{index + 1} / {props.photolist.length}</span></div>
+                            <Image className="blowup" src={source} />
 
                         </Col>
                     </Row></Container>
@@ -68,22 +68,17 @@ function Lightbox(props) {
                 <a className="prev" onClick={prev}>&#10094;</a>
                 <a className="next" onClick={next}>&#10095;</a>
 
-
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer>{
+                props.photolist.map((function (value, key) {
+                    return <div className="footer-thumbnail" key={key} style={{ width: (100 / props.photolist.length) + "%" }}>
+                        {/* <LinkContainer to={"/carousel/" + props.tag + "/" + props.id}><Link to={"/carousel/" + props.tag + "/" + props.id}><Image className="thumbimage" src={props.image.src} /></Link></LinkContainer> */}
+                        <Image onClick={() => { setSource(value.src); setIndex(key); setCaption(value.caption) }} className={"thumbimage demo " + (index === key ? "active" : "")} src={value.src} />
 
+                    </div >
 
-                {
-                    props.photolist.map((function (value, key) {
-                        return <div className="footer-thumbnail" key={key} style={{ width: (100 / props.photolist.length) + "%" }}>
-                            {/* <LinkContainer to={"/carousel/" + props.tag + "/" + props.id}><Link to={"/carousel/" + props.tag + "/" + props.id}><Image className="thumbimage" src={props.image.src} /></Link></LinkContainer> */}
-                            <Image onClick={() => { setSource(value.src); setIndex(key); setCaption(value.caption) }} className={"thumbimage demo " + (index === key ? "active" : "")} src={value.src} />
-
-                        </div >
-
-                    }))
-                }
-            </Modal.Footer></Modal>
+                }))
+            }</Modal.Footer></Modal>
     </Container >
     )
 
