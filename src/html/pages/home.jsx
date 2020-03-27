@@ -5,10 +5,9 @@ import { Jumbotron, Container } from 'react-bootstrap';
 function Home() {
   return <Jumbotron fluid>
     <Container>
-      <h1>Fluid jumbotron</h1>
+      <h1>Work In Progress</h1>
       <p>
-        This is a modified jumbotron that occupies the entire horizontal space of
-        its parent.
+        Click around other links!
       </p>
     </Container>
   </Jumbotron>
